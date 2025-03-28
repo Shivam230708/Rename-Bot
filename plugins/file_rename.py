@@ -20,7 +20,7 @@ async def rename_start(client, message):
     ban_chk = await jishubotz.is_banned(int(message.from_user.id))
     if ban_chk:
         return await message.reply(
-            "**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ. ᴄᴏɴᴛᴀᴄᴛ @CallOwnerBot ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!**"
+            "**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ. ᴄᴏɴᴛᴀᴄᴛ @Unknown_RK01 ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!**"
         )
     if file.file_size > 2000 * 1024 * 1024:
         return await message.reply_text("Sorry, this bot doesn't support files larger than 2GB.")
