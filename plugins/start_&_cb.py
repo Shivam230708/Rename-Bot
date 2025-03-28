@@ -12,7 +12,7 @@ async def start(client, message):
     button = InlineKeyboardMarkup([
         [InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about'),
         InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help')],
-        [InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url='https://telegram.me/TechifyRahul')]
+        [InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url='https://telegram.me/Unknown_RK01')]
     ])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -30,7 +30,7 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup([
                 [InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about'),
                 InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help')],
-                [InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url='https://telegram.me/TechifyRahul')]
+                [InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url='https://telegram.me/Unknown_RK01')]
             ])
         )
     elif data == "help":
@@ -92,18 +92,18 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.ABOUT_TXT,
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("👨‍💻  ʀᴇᴘᴏ", url="https://github.com/TechifyBots"),
-                InlineKeyboardButton("💥  ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
+                [InlineKeyboardButton("👨‍💻  Dᴇᴠᴇʟᴏᴘᴇʀ", url="https://telegram.me/Unknown_RK01"),
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇs", url="https://telegram.me/BotVerseRavi")],
 		[InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start")]
             ])            
         )
 
-    elif data == "donate":
+    elif data == "Uᴘᴅᴀᴛᴇs":
         await query.message.edit_text(
             text=Txt.DONATE_TXT,
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs", url="https://telegram.me/TechifyBots/8")],
+                [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs", url="https://telegram.me/BotVerseRavi")],
                 [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "about"),
                 InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data = "close")]
             ])            
@@ -124,7 +124,7 @@ async def cb_handler(client, query: CallbackQuery):
         if len(str(user_id)) == 10:
             reason = str(data.split("_")[2])
             try:
-                await client.send_message(user_id , f"<b>ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ʙʏ [ʀᴀʜᴜʟ](https://telegram.me/callownerbot)\nʀᴇᴀsᴏɴ : {reason}</b>")
+                await client.send_message(user_id , f"<b>ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ʙʏ [Rᴀᴠɪ Kᴜᴍᴀʀ](https://telegram.me/Unknown_RK01)\nʀᴇᴀsᴏɴ : {reason}</b>")
                 await query.message.edit(f"<b>Aʟᴇʀᴛ sᴇɴᴛ ᴛᴏ <code>{user_id}</code>\nʀᴇᴀsᴏɴ : {reason}</b>")
             except Exception as e:
                 await query.message.edit(f"<b>sʀʏ ɪ ɢᴏᴛ ᴛʜɪs ᴇʀʀᴏʀ : {e}</b>")
@@ -141,7 +141,7 @@ async def cb_handler(client, query: CallbackQuery):
         user_id = int(user_id.replace(' ' , ''))
         if len(str(user_id)) == 10:
             try:
-                unban_text = "<b>ʜᴜʀʀᴀʏ..ʏᴏᴜ ᴀʀᴇ ᴜɴʙᴀɴɴᴇᴅ ʙʏ [ʀᴀʜᴜʟ](https://telegram.me/callownerbot)</b>"
+                unban_text = "<b>ʜᴜʀʀᴀʏ..ʏᴏᴜ ᴀʀᴇ ᴜɴʙᴀɴɴᴇᴅ ʙʏ [Rᴀᴠɪ Kᴜᴍᴀʀ](https://telegram.me/Unknown_RK01)</b>"
                 await client.send_message(user_id , unban_text)
                 await query.message.edit(f"<b>Uɴʙᴀɴɴᴇᴅ Aʟᴇʀᴛ sᴇɴᴛ ᴛᴏ <code>{user_id}</code>\nᴀʟᴇʀᴛ ᴛᴇxᴛ : {unban_text}</b>")
             except Exception as e:
