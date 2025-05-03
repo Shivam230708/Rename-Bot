@@ -68,22 +68,15 @@ status - Check bot status [FOR ADMINS USE ONLY].
 ```
 </details>
 
-### 🥳 CREDIT
+### 💞 CREDIT
 
-<details><summary>Tap On Me For Credit</summary>
+- [TechifyBots](https://github.com/TechifyBots)
 
-💝 [TechifyBots](https://github.com/TechifyBots)
+- [JishuDeveloper](https://github.com/JishuDeveloper)
 
-💘 [JishuDeveloper](https://github.com/JishuDeveloper)
-</details>
+### 😇 [SUPPORT](https://techifybots.github.io/PayWeb)
 
-### 💕 CONTACT DEVELOPER
-
-- [Rahul](https://telegram.me/TechifyRahul)
-
-### ☕ BUY ME A COFFEE
-- [PayPal](https://paypal.me/TechifyBots)
-- [UPI](https://TechifyBots.github.io/Donate)
+### 🥳 [DEVELOPER](https://instagram.com/TechifyRahul)
 
 ### 📌 NOTE
 
