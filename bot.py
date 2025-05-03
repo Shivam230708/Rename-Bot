@@ -37,10 +37,10 @@ class Bot(Client):
             await app.setup()
             PORT = int(os.environ.get("PORT", 8000))  # Use port 8000 or env PORT
             await web.TCPSite(app, "0.0.0.0", PORT).start()
-        print(f"{me.first_name} Is Started.....✨️")
+        print(f"{me.first_name} is Started.....✨️")
         for id in Config.ADMIN:
             try: 
-                await self.send_message(id, f"**{me.first_name} Is Started...**")                                
+                await self.send_message(id, f"**{me.first_name} is Started...**")                                
             except Exception as e:
                 print(f"Error sending message to admin {id}: {e}")
         
@@ -49,7 +49,7 @@ class Bot(Client):
                 curr = datetime.now(timezone("Asia/Kolkata"))
                 date = curr.strftime('%d %B, %Y')
                 time = curr.strftime('%I:%M:%S %p')
-                await self.send_message(Config.LOG_CHANNEL, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")                                
+                await self.send_message(Config.LOG_CHANNEL, f"**{me.mention} is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")                                
             except Exception as e:
                 print(f"Error sending message to LOG_CHANNEL: {e}")
 
